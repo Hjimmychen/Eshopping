@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JNAD - Register</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="image/yzu_logo.jpeg" />
+    <!--網頁隨裝置大小調整寬度,不能縮放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--引用文檔-->
+    <script src="dist/js/jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/mycss.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <script src="js/myjs.js"></script>
+</head>
+<script>
+$(document).ready(function() {
+    $("#input_phone").focusout(function() {
+        // var str = "0911-222-333";
+        var str = $("#input_phone").val();
+        var patt = /09\d{2}-\d{3}-\d{3}/g;
+        var result = patt.test(str);
+        console.log(result);
+
+        $("#error_msg").toggle(!result);
+    });
+});
+</script>
+
+<body>
+    <div class="container bg-container">
+        <div class="cover">
+        </div>
+        <div class="pop_row">
+            <div class="row">
+                <div class="well" style="background-color: rgba(255,255,255,0.8);margin: 0 auto;width: 350px;">
+                    <h3 style="margin: 0 0 20px 0;font-weight: bold;">註冊</h3>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="date_trigger"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input type="text" class="form-control" placeholder="信箱" />
+                    </div>
+                    <div style="height: 20px;"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="date_trigger"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input type="text" class="form-control" placeholder="密碼" />
+                    </div>
+                    <div style="height: 20px;"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="date_trigger"><i class="glyphicon glyphicon-user"></i></span>
+                        <input type="text" class="form-control" placeholder="姓名" />
+                    </div>
+                    <div style="height: 20px;"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="date_trigger"><i class="fa fa-id-badge" aria-hidden="true" style="font-size: 19px;"></i></span>
+                        <select class="form-control" id="slc_type">
+                            <option>企業戶</option>
+                            <option>個人</option>
+                        </select>
+                    </div>
+                    <div style="height: 20px;"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="date_trigger"><i class="glyphicon glyphicon-phone"></i></span>
+                        <input type="text" class="form-control" placeholder="09xx-xxx-xxx" id="input_phone" />
+                    </div>
+                    <span style="color: red;display: none;" id="error_msg">請按照格式"09xx-xxx-xxx"</span>
+                    <div style="height: 20px;"></div>
+                    <div>
+                        <a class="btn btn-default" style="float: left;" href="Login.html"><i class="fa fa-reply" aria-hidden="true"></i>&nbsp;Previous</a>
+                        <button type="button" class="btn btn-success" style="float: right;"><span class="glyphicon glyphicon-plus"></span>&nbsp;Register</button>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

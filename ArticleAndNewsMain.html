@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JNAD - 文章與新聞</title>
+    <link rel="Shortcut Icon" type="/image/x-icon" href="image/yzu_logo.jpeg" />
+    <!--網頁隨裝置大小調整寬度,不能縮放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--引用文檔-->
+    <script src="dist/js/jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/mycss.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <script src="js/myjs.js"></script>
+</head>
+<style type="text/css">
+#pager {
+    list-style-type: none;
+    padding: 0;
+}
+
+#pager>li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #c2c2d6;
+    text-align: center;
+}
+
+#pager>li>a {
+    line-height: 27px;
+    font-size: 16px;
+    color: #006737;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#pager>li:hover {
+    background-color: #006737;
+}
+
+#pager>li:hover>a {
+    color: #FFFFFF;
+}
+</style>
+
+<body>
+    <div id="top_nav"></div>
+    <div class="container after_nav">
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col-md-4">
+                <img src="image/main1p.png" style="width: 100%;margin-bottom: 20px;">
+                <h4 style="margin-bottom: 20px;text-align: justify;">【林果11年】這一刻 是最真實的存在...</h4>
+                <p style="margin-bottom: 20px;text-align: center;color: #999999;">2017-05-09</p>
+            </div>
+            <div class="col-md-4">
+                <img src="image/main1p.png" style="width: 100%;margin-bottom: 20px;">
+                <h4 style="margin-bottom: 20px;text-align: justify;">【林果11年】這一刻 是最真實的存在...</h4>
+                <p style="margin-bottom: 20px;text-align: center;color: #999999;">2017-05-09</p>
+            </div>
+            <div class="col-md-4">
+                <img src="image/main1p.png" style="width: 100%;margin-bottom: 20px;">
+                <h4 style="margin-bottom: 20px;text-align: justify;">【林果11年】這一刻 是最真實的存在...</h4>
+                <p style="margin-bottom: 20px;text-align: center;color: #999999;">2017-05-09</p>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col-md-4">
+                <img src="image/main1p.png" style="width: 100%;margin-bottom: 20px;">
+                <h4 style="margin-bottom: 20px;text-align: justify;">【林果11年】這一刻 是最真實的存在...</h4>
+                <p style="margin-bottom: 20px;text-align: center;color: #999999;">2017-05-09</p>
+            </div>
+            <div class="col-md-4">
+                <img src="image/main1p.png" style="width: 100%;margin-bottom: 20px;">
+                <h4 style="margin-bottom: 20px;text-align: justify;">【林果11年】這一刻 是最真實的存在...</h4>
+                <p style="margin-bottom: 20px;text-align: center;color: #999999;">2017-05-09</p>
+            </div>
+            <div class="col-md-4">
+                <img src="image/main1p.png" style="width: 100%;margin-bottom: 20px;">
+                <h4 style="margin-bottom: 20px;text-align: justify;">【林果11年】這一刻 是最真實的存在...</h4>
+                <p style="margin-bottom: 20px;text-align: center;color: #999999;">2017-05-09</p>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col-md-4">
+                <img src="image/main1p.png" style="width: 100%;margin-bottom: 20px;">
+                <h4 style="margin-bottom: 20px;text-align: justify;">【林果11年】這一刻 是最真實的存在...</h4>
+                <p style="margin-bottom: 20px;text-align: center;color: #999999;">2017-05-09</p>
+            </div>
+            <div class="col-md-4">
+                <img src="image/main1p.png" style="width: 100%;margin-bottom: 20px;">
+                <h4 style="margin-bottom: 20px;text-align: justify;">【林果11年】這一刻 是最真實的存在...</h4>
+                <p style="margin-bottom: 20px;text-align: center;color: #999999;">2017-05-09</p>
+            </div>
+            <div class="col-md-4">
+                <img src="image/main1p.png" style="width: 100%;margin-bottom: 20px;">
+                <h4 style="margin-bottom: 20px;text-align: justify;">【林果11年】這一刻 是最真實的存在...</h4>
+                <p style="margin-bottom: 20px;text-align: center;color: #999999;">2017-05-09</p>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col-md-12" style="text-align: center;">
+                <ul id="pager">
+                    <li><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+                    <li><a href="#">1</a></li>
+                    <li class="active"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div id="footer"></div>
+</body>
+
+</html>

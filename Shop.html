@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JNAD</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="image/yzu_logo.jpeg" />
+    <!--網頁隨裝置大小調整寬度,不能縮放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--引用文檔-->
+    <script src="dist/js/jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/mycss.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <script src="js/myjs.js"></script>
+</head>
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".collapse").on('show.bs.collapse', function() {
+        $(this).parent().find("i").addClass("collapse_animation");
+    });
+    $(".collapse").on('hide.bs.collapse', function() {
+        $(this).parent().find("i").removeClass("collapse_animation");
+    });
+});
+</script>
+
+<style type="text/css">
+    #pager{
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #pager > li{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid #c2c2d6;
+        text-align: center;
+    }
+
+    #pager > li > a{
+        line-height: 27px;
+        font-size: 16px;
+        color: #006737;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    #pager > li:hover{
+        background-color: #006737;
+    }
+
+    #pager > li:hover > a{
+        color: #FFFFFF;
+    }
+</style>
+
+<body>
+    <div id="top_nav"></div>
+    <div class="container after_nav">
+        <div class="row">
+            <div class="col-md-9">
+                <img src="image/jbpic.jpg" width="100%">
+                <div style="margin-top: 20px;">
+                    <p style="float: left;">顯示 249 筆結果中的 1–18 筆</p>
+                    <select class="form-control" style="float: right;width: 200px;">
+                        <option>依上架時間</option>
+                    </select>
+                    <div style="clear: both;"></div>
+                </div>
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-md-4">
+                        <img src="image/pic.jpg" width="100%">
+                        <p style="text-align: center;color: #006737;margin-top: 20px;">口袋飽寶多肉組 – 父親節禮物</p>
+                        <p style="text-align: center;">NT$2,020</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="image/pic.jpg" width="100%">
+                        <p style="text-align: center;color: #006737;margin-top: 20px;">口袋飽寶多肉組 – 父親節禮物</p>
+                        <p style="text-align: center;">NT$2,020</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="image/pic.jpg" width="100%">
+                        <p style="text-align: center;color: #006737;margin-top: 20px;">口袋飽寶多肉組 – 父親節禮物</p>
+                        <p style="text-align: center;">NT$2,020</p>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-md-4">
+                        <img src="image/pic.jpg" width="100%">
+                        <p style="text-align: center;color: #006737;margin-top: 20px;">口袋飽寶多肉組 – 父親節禮物</p>
+                        <p style="text-align: center;">NT$2,020</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="image/pic.jpg" width="100%">
+                        <p style="text-align: center;color: #006737;margin-top: 20px;">口袋飽寶多肉組 – 父親節禮物</p>
+                        <p style="text-align: center;">NT$2,020</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="image/pic.jpg" width="100%">
+                        <p style="text-align: center;color: #006737;margin-top: 20px;">口袋飽寶多肉組 – 父親節禮物</p>
+                        <p style="text-align: center;">NT$2,020</p>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-md-4">
+                        <img src="image/pic.jpg" width="100%">
+                        <p style="text-align: center;color: #006737;margin-top: 20px;">口袋飽寶多肉組 – 父親節禮物</p>
+                        <p style="text-align: center;">NT$2,020</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="image/pic.jpg" width="100%">
+                        <p style="text-align: center;color: #006737;margin-top: 20px;">口袋飽寶多肉組 – 父親節禮物</p>
+                        <p style="text-align: center;">NT$2,020</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="image/pic.jpg" width="100%">
+                        <p style="text-align: center;color: #006737;margin-top: 20px;">口袋飽寶多肉組 – 父親節禮物</p>
+                        <p style="text-align: center;">NT$2,020</p>
+                    </div>
+                </div>
+                <div class="row" style="padding-top: 40px;">
+                    <div class="col-md-12" style="text-align: center;">
+                        <ul id="pager">
+                            <li><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+                            <li><a href="#">1</a></li>
+                            <li class="active"><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">15</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="image/shop_right_banner.png" width="100%" style="margin-bottom: 20px;">
+                <h4 style="color: #006737;font-size: 2.4rem;">商品分類</h4>
+                <div id="shop_right_wrapper" style="margin-bottom: 20px;">
+                    <ul>
+                        <li style="background-color: #F2EEEB;">
+                            <a data-toggle="collapse" href="#shop_list1"><span style="float: left;">【開幕誌慶】</span><i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;margin-top: 4px;"></i><div style="clear: both;"></div></a>
+                            <div id="shop_list1" class="collapse">
+                                <ul>
+                                    <li>開幕賀禮大集合</li>
+                                    <li>落地型盆栽</li>
+                                    <li>桌上型盆栽</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a data-toggle="collapse" href="#shop_list2"><span style="float: left;">【特別企劃】</span><i class="fa fa-arrow-circle-right " aria-hidden="true" style="float: right;margin-top: 4px;"></i><div style="clear: both;"></div></a>
+                            <div id="shop_list2" class="collapse">
+                                <ul>
+                                    <li>開幕賀禮大集合</li>
+                                    <li>落地型盆栽</li>
+                                    <li>桌上型盆栽</li>
+                                </ul>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li>
+                            <a data-toggle="collapse" href="#shop_list3"><span style="float: left;">【送禮需求】</span><i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;margin-top: 4px;"></i><div style="clear: both;"></div></a>
+                            <div id="shop_list3" class="collapse">
+                                <ul>
+                                    <li>開幕賀禮大集合</li>
+                                    <li>落地型盆栽</li>
+                                    <li>桌上型盆栽</li>
+                                </ul>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li>
+                            <a data-toggle="collapse" href="#shop_list4"><span style="float: left;">【送禮價格】</span><i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;margin-top: 4px;"></i><div style="clear: both;"></div></a>
+                            <div id="shop_list4" class="collapse">
+                                <ul>
+                                    <li>開幕賀禮大集合</li>
+                                    <li>落地型盆栽</li>
+                                    <li>桌上型盆栽</li>
+                                </ul>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li>
+                            <a data-toggle="collapse" href="#shop_list5"><span style="float: left;">【大型植物】</span><i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;margin-top: 4px;"></i><div style="clear: both;"></div></a>
+                            <div id="shop_list5" class="collapse">
+                                <ul>
+                                    <li>開幕賀禮大集合</li>
+                                    <li>落地型盆栽</li>
+                                    <li>桌上型盆栽</li>
+                                </ul>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li>
+                            <a data-toggle="collapse" href="#shop_list6"><span style="float: left;">【手作課程】</span><i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;margin-top: 4px;"></i><div style="clear: both;"></div></a>
+                            <div id="shop_list6" class="collapse">
+                                <ul>
+                                    <li>開幕賀禮大集合</li>
+                                    <li>落地型盆栽</li>
+                                    <li>桌上型盆栽</li>
+                                </ul>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li>
+                            <a data-toggle="collapse" href="#shop_list7"><span style="float: left;">【周邊商品】</span><i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;margin-top: 4px;"></i><div style="clear: both;"></div></a>
+                            <div id="shop_list7" class="collapse">
+                                <ul>
+                                    <li>開幕賀禮大集合</li>
+                                    <li>落地型盆栽</li>
+                                    <li>桌上型盆栽</li>
+                                </ul>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li>
+                            <a data-toggle="collapse" href="#shop_list8"><span style="float: left;">【花器品牌】</span><i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;margin-top: 4px;"></i><div style="clear: both;"></div></a>
+                            <div id="shop_list8" class="collapse">
+                                <ul>
+                                    <li>開幕賀禮大集合</li>
+                                    <li>落地型盆栽</li>
+                                    <li>桌上型盆栽</li>
+                                </ul>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: #006737;font-size: 2.4rem;">購物車</h4>
+                    <p>購物車內無任何商品</p>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: #006737;font-size: 2.4rem;">客戶的聲音</h4>
+                    <a href="Shop1.html"><img src="image/003-2.jpg" width="100%"></a>
+                    <p>感謝各位於有肉網路花店購物，一點點肯定、一點點建議，對我們來說都很深刻、都會轉化為成長的動力。</p>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: #006737;font-size: 2.4rem;">多肉禮物・送肉送到心坎裡</h4>
+                    <a href="Shop2.html"><img src="image/400-4.jpg" width="100%"></a>
+                    <p>有來過有肉的朋友們，一定都知道我們最棒的就是整間店的多肉植物與眾多台灣設計師設計的花器，兩相搭配萌度爆表、心意更滿滿，在線上商店你一樣可以感受到我們對於多肉植物的熱愛與用心✨</p>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: #006737;font-size: 2.4rem;">網路花店最熱門的盆栽組</h4>
+                    <a href="Shop3.html"><img src="image/花店2.jpg" width="100%"></a>
+                    <p>若是遇到不知道要送什麼禮物，不知道朋友開店了該怎麼挑選致意的花禮，參考這些熱門選項，也許會給你帶來一些新的想法喔！</p>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: #006737;font-size: 2.4rem;">多肉禮品 Q&A</h4>
+                    <a href="Shop4.html"><img src="image/qa400.jpg" width="100%"></a>
+                    <p>在購買禮物時有遇到什麼問題嗎？還是擔心這麼漂亮療癒的多肉植物買回去要怎麼照顧呢？我們特地整理了問答集，先來看看吧！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div id="footer"></div>
+</body>
+
+</html>
