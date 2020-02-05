@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JNAD - Main</title>
+    <link rel="Shortcut Icon" type="/image/x-icon" href="image/yzu_logo.jpeg" />
+    <!--網頁隨裝置大小調整寬度,不能縮放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--引用文檔-->
+    <script src="dist/js/jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/mycss.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <script src="js/myjs.js"></script>
+</head>
+
+<body>
+    <div id="top_nav"></div>
+    <!-- Footer -->
+    <div id="footer" style="position: fixed;bottom: 0;width: 100%;"></div>
+    <div id="overlay" style="display: block;"></div>
+    <div class="o-lay" style="display: block;">
+        <p class="icon"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;貼心提醒</p>
+        <p class="text">為保護你的帳號安全，若超過十分鐘未使用歐付寶，帳戶將自動登出！</p>
+        <p style="font-size: 30px;text-align: center;margin-bottom: 20px;">目前還剩<span style="color: red;" id="min"></span>分<span style="color: red;" id="sec"></span>秒</p>
+        <div style="text-align: center;">
+            <button type="button" class="btn btn-primary" id="continue">繼續使用</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn btn-default" id="logout">我要登出</button>
+        </div>
+    </div>
+</body>
+<style type="text/css">
+.o-lay {
+    position: fixed;
+    display: none;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 350px;
+    margin: auto;
+    background-color: #FFFFFF;
+    z-index: 21;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.o-lay>.icon {
+    color: #3399ff;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.o-lay>.text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+</style>
+<script type="text/javascript">
+var countDownDate = new Date();
+countDownDate.setMinutes(countDownDate.getMinutes() + 10);
+
+var countdownfunction = setInterval(function() {
+    var now = new Date().getTime();
+
+    var distance = countDownDate - now;
+
+    //ms
+    console.log("distance: " + distance);
+
+    var minutes = parseInt(distance / (1000 * 60));
+    var seconds = parseInt(distance / 1000 - minutes * 60);
+
+    document.getElementById("min").innerHTML = minutes;
+    document.getElementById("sec").innerHTML = seconds;
+
+    if (distance < 0) {
+        location.href = "Main.html";
+    }
+}, 1000);
+
+$(document).ready(function() {
+    $("#continue, #logout").click(function() {
+        location.href = "Main.html";
+    });
+});
+</script>
+
+</html>

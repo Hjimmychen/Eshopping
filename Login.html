@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JNAD - Login</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="image/yzu_logo.jpeg" />
+    <!--網頁隨裝置大小調整寬度,不能縮放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--引用文檔-->
+    <script src="dist/js/jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/mycss.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <script src="js/myjs.js"></script>
+</head>
+
+<body>
+    <div class="container bg-container">
+        <div class="cover">
+        </div>
+        <div class="pop_row">
+            <div class="row">
+                <div class="well" style="background-color: rgba(255,255,255,0.8);margin: 0 auto;width: 350px;position: relative;">
+                    <h3 style="margin: 0 0 20px 0;font-weight: bold;">會員登入</h3>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input type="text" class="form-control" placeholder="信箱" />
+                    </div>
+                    <div style="height: 20px;"></div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input type="text" class="form-control" placeholder="密碼" />
+                    </div>
+                    <div style="height: 20px;"></div>
+                    <div>
+                        <a style="float: left;margin-top: 7px;" href="Forget.html">回首頁</a>
+                        <span style="float: left;margin-top: 7px;">&nbsp;|&nbsp;</span>
+                        <a style="color: red;float: left;margin-top: 7px;" href="Forget.html">忘記密碼</a>
+                        <span style="float: left;margin-top: 7px;">&nbsp;|&nbsp;</span>
+                        <a style="color: green;float: left;margin-top: 7px;" href="Register.html">註冊</a>
+                        <button type="button" class="btn btn-primary" style="float: right;"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Log In</button>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    $('button').on('click',function(){
+        alert("123");
+    });
+</script>
+</html>

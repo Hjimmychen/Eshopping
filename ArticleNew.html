@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JNAD - 文章</title>
+    <link rel="Shortcut Icon" type="/image/x-icon" href="image/yzu_logo.jpeg" />
+    <!--網頁隨裝置大小調整寬度,不能縮放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--引用文檔-->
+    <script src="dist/js/jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/mycss.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <script src="js/myjs.js"></script>
+</head>
+<style type="text/css">
+.overlay-img {
+    margin: 0 auto;
+    width: 40%;
+    max-width: 400px;
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-60%);
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+    $(document).on('click', '[modal-image]', function() {
+        $("#overlay_img").attr('src', $(this).attr('src'))
+        $("#overlay").show();
+    });
+
+    $("#overlay").click(function() {
+        $("#overlay").hide();
+    });
+});
+</script>
+
+<body>
+    <div id="overlay" style="cursor: pointer;">
+        <img id="overlay_img" class="overlay-img">
+    </div>
+    <div id="top_nav"></div>
+    <div class="container after_nav">
+        <div class="row" style="margin-bottom: 20px;">
+            <div class="col-md-12">
+                <h3 style="color: #006737;">【林果11年】這一刻 是最真實的存在...</h3>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 20px;">
+            <div class="col-md-8 col-xs-12">
+                <img src="Article/幸運木照顧.jpg" style="width: 100%;">
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <img src="Article/product_988650.jpg" style="width: 100%;margin-bottom: 10px;" modal-image>
+                <p style="text-align: center;">(點選放大觀看)</p>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 60px;">
+            <div class="col-md-12">
+                <p style="text-align: justify;">
+                    作品植栽：隴月石蓮花,小玉串,虹之玉,瓦松
+                    <br/> 作品尺寸：18公分＊15公分
+                    <br/>
+                    <br/> 可愛又療癒性十足的多肉植物搭配手工作的粗陶盆就是可以這麼沒有 違和感地融入居家或庭院佈置之中. 這種四方寛口的粗陶盆很適合將低矮的多 肉植物陳列布置,一遠望去就很有綠意氛圍. 也可以隨興加入一些裝飾小物增加欣 賞趣味. 擺放在陽台或當客廳背景點綴都很討喜. 夏季時,因為溫度高濕, 在盆器的 選擇上, 除了搭配視覺的美感, 也要考量日後照顧植物上的方便性. 陶盆的好處就可 以為植物設計上, 大大加分. 因它們本身帶有排水透氣和保濕性佳的功能,很多植物 都適合被種植其中. 不防可以運用手作盆的獨特性為居家生活多一些變化。
+                </p>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 20px;">
+            <div class="col-md-12">
+                <p style="color: #006737;display: inline-block;position: relative;top: -7px;">文章分享：</p>
+                <i class="fa fa-facebook-official" aria-hidden="true" style="color: #006737;font-size: 36px;margin-right: 10px;cursor: pointer;"></i>
+                <i class="fa fa-instagram" aria-hidden="true" style="color: #006737;font-size: 36px;cursor: pointer;"></i>
+            </div>
+        </div>
+        <!--
+            <div class="row" style="margin-bottom: 20px;">
+                <div class="col-md-12">
+                    <div style="float: left;cursor: pointer;">
+                        <i class="fa fa-arrow-left" aria-hidden="true" style="color: #006737;"></i>
+                        <p style="color: #006737;display: inline-block;">上一篇</p>
+                    </div>
+                    <div style="float: right;cursor: pointer;">
+                        <i class="fa fa-arrow-right" aria-hidden="true" style="color: #006737;"></i>
+                        <p style="color: #006737;display: inline-block;">下一篇</p>
+                    </div>
+                </div>
+            </div>
+        -->
+    </div>
+    <!-- Footer -->
+    <div id="footer"></div>
+</body>
+
+</html>

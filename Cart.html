@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JNAD - Cart</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="image/yzu_logo.jpeg" />
+    <!--網頁隨裝置大小調整寬度,不能縮放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--引用文檔-->
+    <script src="dist/js/jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/mycss.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <script src="js/myjs.js"></script>
+</head>
+
+<body>
+    <div id="top_nav"></div>
+    <div class="container after_nav">
+        <div class="row" style="padding: 0 15px 0 15px;">
+            <h3 class="p_title" style="text-align: center;font-size: 4rem;">購物車</h3>
+            <div style="height: 20px;"></div>
+            <div class="col-md-6 col-md-offset-3">
+                <img src="image/shop_right_banner_lg.png" style="width: 100%;">
+            </div>
+        </div>
+        <div style="height: 20px;"></div>
+        <div class="row" style="padding: 0 15px 0 15px;">
+            <h3 class="p_title" style="text-align: center;">Good Choice! 選的好!</h3>
+        </div>
+        <div class="row" style="padding: 0 15px 0 15px;">
+            <h3>選擇商品</h3>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Pic</th>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Count</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="glyphicon glyphicon-remove"></span></td>
+                            <td><img src="image/intro1.jpg" style="width: 50px;height: 50px;" /></td>
+                            <td>棒球魂老爹 - 父親節禮物 修改加購商品內容</td>
+                            <td>NT$2,650</td>
+                            <td>
+                                <input type="number" id="counter" value="1" style="width: 60px;border: 1px solid #006737;padding-left: 10px;height:32px;margin-right: 10px;">
+                            </td>
+                            <td>NT$2,650</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row" style="padding: 0 15px 0 15px;">
+            <p class="p_title">您可能對此有興趣…</p>
+            <div class="col-md-3" style="margin-bottom: 20px;">
+                <div style="width: 100%;border:1px solid #006737;padding: 10px;text-align: center;">
+                    <img src="image/intromini1.jpg" width="100%" style="margin-bottom: 10px;">
+                    <p class="p_title">悠墨大圓盆 – 貴氣仙人掌組</p>
+                    <p>NT$3,370</p>
+                </div>
+            </div>
+            <div class="col-md-3" style="margin-bottom: 20px;">
+                <div style="width: 100%;border:1px solid #006737;padding: 10px;text-align: center;">
+                    <img src="image/intromini1.jpg" width="100%" style="margin-bottom: 10px;">
+                    <p class="p_title">悠墨大圓盆 – 貴氣仙人掌組</p>
+                    <p>NT$3,370</p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="padding: 0 15px 0 15px;">
+            <h3>購物車總計</h3>
+            <table class="table table-hover">
+                <tbody>
+                    <tr>
+                        <td>小計</td>
+                        <td>NT$2,650</td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-weight: bold;">總計</span></td>
+                        <td><span style="font-weight: bold;">NT$2,650</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="text-align: center;">
+                <button type="button" class="btn btn-primary">前往結帳</button>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <div style="height: 20px;"></div>
+    </div>
+    <!-- Footer -->
+    <div id="footer"></div>
+</body>
+
+</html>

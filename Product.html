@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JNAD - Product</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="image/yzu_logo.jpeg" />
+    <!--網頁隨裝置大小調整寬度,不能縮放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--引用文檔-->
+    <script src="dist/js/jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/mycss.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <script src="js/myjs.js"></script>
+</head>
+
+<body>
+    <div id="top_nav"></div>
+    <div class="container after_nav">
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="image/8m8d.jpg" width="100%" style="border:1px solid #006737;">
+                    </div>
+                    <div class="col-md-7">
+                        <p style="font-size: 2.4rem;color: #006737;margin-bottom: 20px;">口袋飽寶多肉組 – 父親節禮物</p>
+                        <p style="font-weight: 800;margin-bottom: 20px;">NT$2,020</p>
+                        <p style="color: #006737;margin-bottom: 20px;"><span class="glyphicon glyphicon-ok"></span>給為家付出全心全力的老爸</p>
+                        <p style="margin-bottom: 20px;"><span class="glyphicon glyphicon-ok"></span>今年父親節來點不一樣的禮物</p>
+                        <p style="color: #006737;margin-bottom: 20px;"><span class="glyphicon glyphicon-ok"></span>讓爸爸在辦公室也閃一下</p>
+                        <p style="margin-bottom: 30px;"><span class="glyphicon glyphicon-ok"></span>讓爸爸口袋也飽飽！</p>
+                        <p>加購商品</p>
+                        <p style="margin-bottom: 20px;color: #006737;">詳細介紹：仙人掌好朋友澆水器、有肉禮券</p>
+                        <div class="row">
+<!--                             <div class="col-md-3">
+                                <img src="image/0713父親節商品拍攝-7102-1.jpg" width="100%">
+                                <p style="text-align: center;">仙人掌好朋友澆水器</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="image/禮卷.jpg" width="100%">
+                                <p style="text-align: center;">有肉禮券</p>
+                            </div> -->
+                            <div class="col-md-12">
+                                <table class="table table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width: 10px;">
+                                                <label><input type="checkbox" value="" style="margin: 6px 0 0 0;"></label>
+                                            </td>
+                                            <td>
+                                                <p style="margin-bottom: 10px;">我要加<span style='color:red;'>$38</span>買[日本森永製菓] 嗨啾軟糖</p>
+                                                <input type="number" id="counter" value="1" style="width: 60px;border: 1px solid #006737;padding-left: 10px;height:32px;margin-right: 10px">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 10px;">
+                                                <label><input type="checkbox" value="" style="margin: 6px 0 0 0;"></label>
+                                            </td>
+                                            <td>
+                                                <p style="margin-bottom: 10px;">我要加<span style='color:red;'>$38</span>買[日本森永製菓] 嗨啾軟糖</p>
+                                                <input type="number" id="counter" value="1" style="width: 60px;border: 1px solid #006737;padding-left: 10px;height:32px;margin-right: 10px">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 25px;">
+                            <input type="number" id="counter" value="1" style="width: 60px;border: 1px solid #006737;padding-left: 10px;height:32px;margin-right: 10px;float: left;">
+                            <button class="btn" type="button" style="background-color: #006737;color: white;border-radius: 0;float: left;">加入購物車</button>
+                            <button class="btn" type="button" style="background-color: #006737;color: white;border-radius: 0;float: right;">直接結帳</button>
+                            <div style="clear: both;"></div>
+                        </div>
+                        <div>
+                            <p><span class="glyphicon glyphicon-align-left"></span>分類： 三個世代的父親節禮物, 開幕賀禮大集合, 桌上型盆栽, 開幕誌慶, 財源滾滾來, 祝賀升遷, 送同事, 送朋友, 送老師, 喬遷之喜, ＄2,000~3,000 元, 米口·陶</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="padding: 0 15px 0 15px;">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#intro">商品說明</a></li>
+                        <li><a data-toggle="tab" href="#cost_list">運費表</a></li>
+                        <li><a data-toggle="tab" href="#package">包裝&插牌</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="intro" class="tab-pane fade in active" style="padding:30px;border:1px solid #006737;border-top-width: 0;">
+                            <h2 style="font-size: 2rem;color: #006737;">商品說明</h2>
+                            <img src="image/intro1.jpg" width="100%" style="margin-bottom: 20px;">
+                            <img src="image/intro2.jpg" width="100%" style="margin-bottom: 20px;">
+                            <h3 class="p_title">給為家付出全心全力的老爸</h3>
+                            <p>
+                                從小扮演著嚴父的角色，家計重擔爸爸一肩扛起，這些年來辛苦女兒看在眼裡，感激在心裡。今年父親節身為爸爸的最愛的自己（很敢說），送一份特別的禮物給最愛的老爸：「口袋飽寶多肉組」。
+                                <br/>
+                                <br/> 特別形狀的盆器，看起來像是口袋鼓鼓的福袋樣式，象徵著爸爸的荷包永遠都是飽飽的模樣，荷包滿滿當然會讓爸爸開心，自己當然希望爸爸每天順心如意，裡面的多肉植物也是別具意涵喔！
+                            </p>
+                            <h3 class="p_title">滿滿祝福的多肉植物</h3>
+                            <ul>
+                                <li>綠珊瑚：有著「年輕力壯」的好意涵</li>
+                                <li>鷹爪：抓錢滿滿</li>
+                                <li>後方的金紐：像山一樣，讓爸爸有個靠山</li>
+                                <li>前方的小小金色仙人掌：是帶財的植物喔！</li>
+                            </ul>
+                            <div style="height: 30px;"></div>
+                            <h3 class="p_title">關於盆器</h3>
+                            <img src="image/intro3.jpg" width="100%" style="margin-bottom: 20px;">
+                            <p>
+                                來自台灣米口・陶的設計，一直以來，米口・陶都是秉持著傳遞手作陶的溫暖，讓器皿與生活結合。
+                                <br/>
+                                <br/> 面對不同的釉色變化、造型的器皿，心動的人也都大不相同，所以米口・陶認為手作陶和使用者的相遇，都是秉持著緣份。而且手作陶很有意思，釉色會隨著使用者的習慣、使用次數和時間，有不同的變化。我們期盼手作器皿在生活中和使用者相處的時光點滴，讓器皿不只是工具，而是成為生活中不可或缺的夥伴。
+                            </p>
+                            <div style="background-color: #EEEEEE;border-left: 5px solid #006737;padding: 20px;">
+                                <p>多肉植物的肥嫩討喜樣貌與手作陶器的溫暖結合，與喜歡享受慢活生活的你分享。</p>
+                            </div>
+                            <div style="height: 80px;"></div>
+                            <h3 class="p_title">多肉植物專用介質</h3>
+                            <img src="image/intro4.jpg" height="200px" style="margin-bottom: 20px;">
+                            <p>經過多年來的種植試驗，有肉找到最適合多肉植物的介質混合比例：內含排水性優的唐山石、質地堅硬的黑火山石、排水透氣性功能佳的博拉石、水份吸收力和肥份力佳的蛇木屑、通氣性良好並可以讓根系發育健康的山沙。有肉出品的每盆多肉植栽都是使用這些高價的多肉植物專用混合土，讓帶回去照顧的你不需要再擔心土的問題，大大提升種植的成功率。</p>
+                            <div style="height: 30px;"></div>
+                            <h3 class="p_title">要怎麼照顧這些多肉植物呢？</h3>
+                            <img src="image/intro5.jpg" width="100%" style="margin-bottom: 20px;">
+                            <p>若想要將他們種植得宜，窗邊是最基本的日照環境。而澆水方式為：使用多肉植物的專用澆水器，每四週澆水一次，每次澆水量約 150 c.c。讓他們繼續保持在戶外，多肉植物才會繼續維持美麗的色澤喔！ 多肉植物喜歡溫暖、通風、且有日照的環境，過於潮濕且寒冷的環境不適合種植，是一種相當耐乾旱的植物。</p>
+                            <h3 class="p_title">尺寸 (cm)</h3>
+                            <p>13 x 8 x 20(H)</p>
+                            <div style="height: 30px;"></div>
+                            <h3 class="p_title">材質</h3>
+                            <p>水泥盆、多肉植物專用介質、多肉植物</p>
+                            <div style="height: 30px;"></div>
+                            <h3 class="p_title">注意事項</h3>
+                            <ul>
+                                <li>此商品包含一組寶石接水盤。</li>
+                                <li>多肉植物的樣貌會因季節及溫度不同而有所差異或品質不佳，請同意有肉花藝師精選健康的多肉為你做搭配與調整。</li>
+                                <li>最佳觀賞期為一個月，建議放在半日照通風處，依養護卡的內容照顧，可讓植栽生命維持更久。</li>
+                                <li>植​栽​​​​沒有提供網購​七天的鑑賞期。​若因運送過程導致損壞​，請​聯繫​ LINE 客服 ( LINE ID​​ : @succuland )，有肉​將立即幫你處理，請安心選購。</li>
+                                <li>若非購買花器與空氣鳳梨組，​多肉植栽組​配送皆是專人專車配送，請於運送方式選擇專車配送。</li>
+                            </ul>
+                            <div style="height: 30px;"></div>
+                            <h3 class="p_title">包裝的細節</h3>
+                            <img src="image/intro6.jpg" width="100%" style="margin-bottom: 20px;">
+                            <img src="image/intro7.jpg" width="100%" style="margin-bottom: 20px;">
+                            <p>有肉有超細心的包裝服務與「心內話」卡片客製化服務，因為盆器的大小高度形狀不同，故我們選擇軟性的紙張包裝，可以讓盆器與植物好好地被保護住，不容易輕易晃動掉出，當然美觀也是相當重要的！此外，「心內話」卡片外框圍繞著綠意盎然多肉植物，簡單的文字卻有滿滿的心意，從每一句大家想要祝福的話就知道送禮人的用心，希望透過這項服務，大家的禮物變得更有意義。</p>
+                            <div style="background-color: #EEEEEE;border-left: 5px solid #006737;padding: 20px;">
+                                <p>把平時不好意思說的話，都跟爸爸說吧！</p>
+                            </div>
+                            <div style="height: 20px;"></div>
+                            <ul>
+                                <li>有肉：包裝的小細節</li>
+                                <li>「祝福肉牌」送禮送到心坎裡</li>
+                            </ul>
+                            <div style="height: 30px;"></div>
+                            <h3 class="p_title">送禮小技巧</h3>
+                            <p>「心內話」卡片也可以打上表情符號，會讓收到禮物的人感受到溫暖的情意喔！</p>
+                            <div style="height: 30px;"></div>
+                            <img src="image/intro8.jpg" width="100%" style="margin-bottom: 20px;">
+                            <img src="image/intro9.jpg" width="100%" style="margin-bottom: 20px;">
+                        </div>
+                        <div id="cost_list" class="tab-pane fade" style="padding:30px;border:1px solid #006737;border-top-width: 0;">
+                            <p class="p_title" style="text-align: center;">精緻時尚的多肉盆栽，我們提供全台專車代客送花服務。
+                                <br/> 網路花店消費滿 2500 元，雙北免運費！</p>
+                            <div style="background-color: #EEEEEE;border-left: 5px solid #006737;height: 50px;padding-left: 10px;">
+                                <p style="line-height: 50px;">台北市運費表</p>
+                            </div>
+                            <div style="height: 20px;"></div>
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>區域</th>
+                                        <th>一般</th>
+                                        <th>大型</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>大安區</td>
+                                        <td>$200</td>
+                                        <td>$400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>大安區</td>
+                                        <td>$200</td>
+                                        <td>$400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>大安區</td>
+                                        <td>$200</td>
+                                        <td>$400</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div style="height: 20px;"></div>
+                            <div style="background-color: #EEEEEE;border-left: 5px solid #006737;height: 50px;padding-left: 10px;">
+                                <p style="line-height: 50px;">新北市運費表</p>
+                            </div>
+                            <div style="height: 20px;"></div>
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>區域</th>
+                                        <th>一般</th>
+                                        <th>大型</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>大安區</td>
+                                        <td>$200</td>
+                                        <td>$400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>大安區</td>
+                                        <td>$200</td>
+                                        <td>$400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>大安區</td>
+                                        <td>$200</td>
+                                        <td>$400</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div style="height: 20px;"></div>
+                            <div style="background-color: #EEEEEE;border-left: 5px solid #006737;height: 50px;padding-left: 10px;">
+                                <p style="line-height: 50px;">雙北縣市外，其他縣市一般盆栽運費統一 $550（配送需要 2-5 個工作天）。</p>
+                            </div>
+                            <div style="height: 20px;"></div>
+                            <h3 class="p_title">
+                                注意事項：
+                            </h3>
+                            <ul>
+                                <li>花蓮、台東及離島地區暫不提供多肉植栽組專車運送服務。</li>
+                                <li>運費為代送服務，僅提供收據。</li>
+                                <li>若配送地址需爬樓層，每層樓增加 $50 元。</li>
+                                <li>若需寄送至海外地區，請以 LINE 客服聯繫：@succuland</li>
+                                <li>購買空盆、空鳳組、周邊商品，郵局運費統一 $80。</li>
+                            </ul>
+                        </div>
+                        <div id="package" class="tab-pane fade" style="padding:30px;border:1px solid #006737;border-top-width: 0;">
+                            <p class="p_title">包裝的小細節（免費服務）</p>
+                            <img src="image/package1.jpg" width="100%" style="margin-bottom: 20px;">
+                            <p>因為盆器的大小高度形狀不同，故我們選擇軟性的紙張包裝，可以讓盆器與植物好好地被保護住，不容易輕易晃動掉出，再搭配上溫暖綠色系的彩蝶紙，除了美觀之外，讓收禮人也有拆禮物的驚喜感，這也是很重要的。</p>
+                            <div style="height: 20px;"></div>
+                            <div style="background-color: #EEEEEE;border-left: 5px solid #006737;height: 50px;padding-left: 10px;">
+                                <p style="line-height: 50px;">更多包裝細節的介紹</p>
+                            </div>
+                            <div style="height: 10px;"></div>
+                            <h3 class="p_title">祝福插牌製作（免費服務）</h3>
+                            <img src="image/package2.jpg" width="100%" style="margin-bottom: 20px;">
+                            <p>新改版的祝福肉牌，外框圍繞著綠意盎然多肉植物，簡單的文字卻有滿滿的心意，從每一句大家想要祝福的話就知道送禮人的用心，希望透過這項服務，能夠大家的禮物變得更有意義。</p>
+                            <div style="height: 20px;"></div>
+                            <img src="image/package3.jpg" width="100%" style="margin-bottom: 20px;">
+                            <div style="height: 20px;"></div>
+                            <h3 class="p_title">插牌新功能</h3>
+                            <p>從這份花禮開始，你也可以在祝賀插牌上加入「表情符號」囉，無論是開幕誌慶🎉、生日快樂🍰、財源滾滾來💰，讓這份禮物更有趣！</p>
+                            <div style="height: 20px;"></div>
+                            <p>購買商品後，結帳頁面填上以下三種資訊，成品參考頁面，若有疑問可與線上客服聯繫 ( LINE ID : @succuland ) 。</p>
+                            <img src="image/package4.png" width="100%" style="margin-bottom: 20px;">
+                            <p>多肉禮品也會附上多肉植物專用養護小卡喔！</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 20px;"></div>
+                <div class="row" style="padding: 0 15px 0 15px;">
+                    <p class="p_title">您可能也喜歡…</p>
+                    <div class="col-md-3" style="margin-bottom: 20px;">
+                        <div style="width: 100%;border:1px solid #006737;padding: 10px;text-align: center;">
+                            <img src="image/intromini1.jpg" width="100%" style="margin-bottom: 10px;">
+                            <p class="p_title">悠墨大圓盆 – 貴氣仙人掌組</p>
+                            <p>NT$3,370</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="margin-bottom: 20px;">
+                        <div style="width: 100%;border:1px solid #006737;padding: 10px;text-align: center;">
+                            <img src="image/intromini1.jpg" width="100%" style="margin-bottom: 10px;">
+                            <p class="p_title">悠墨大圓盆 – 貴氣仙人掌組</p>
+                            <p>NT$3,370</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="margin-bottom: 20px;">
+                        <div style="width: 100%;border:1px solid #006737;padding: 10px;text-align: center;">
+                            <img src="image/intromini1.jpg" width="100%" style="margin-bottom: 10px;">
+                            <p class="p_title">悠墨大圓盆 – 貴氣仙人掌組</p>
+                            <p>NT$3,370</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="margin-bottom: 20px;">
+                        <div style="width: 100%;border:1px solid #006737;padding: 10px;text-align: center;">
+                            <img src="image/intromini1.jpg" width="100%" style="margin-bottom: 10px;">
+                            <p class="p_title">悠墨大圓盆 – 貴氣仙人掌組</p>
+                            <p>NT$3,370</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="padding: 0 15px 0 15px;">
+                    <p class="p_title">相關商品</p>
+                    <div class="col-md-3" style="margin-bottom: 20px;">
+                        <div style="width: 100%;border:1px solid #006737;padding: 10px;text-align: center;">
+                            <img src="image/intromini1.jpg" width="100%" style="margin-bottom: 10px;">
+                            <p class="p_title">悠墨大圓盆 – 貴氣仙人掌組</p>
+                            <p>NT$3,370</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="margin-bottom: 20px;">
+                        <div style="width: 100%;border:1px solid #006737;padding: 10px;text-align: center;">
+                            <img src="image/intromini1.jpg" width="100%" style="margin-bottom: 10px;">
+                            <p class="p_title">悠墨大圓盆 – 貴氣仙人掌組</p>
+                            <p>NT$3,370</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="margin-bottom: 20px;">
+                        <div style="width: 100%;border:1px solid #006737;padding: 10px;text-align: center;">
+                            <img src="image/intromini1.jpg" width="100%" style="margin-bottom: 10px;">
+                            <p class="p_title">悠墨大圓盆 – 貴氣仙人掌組</p>
+                            <p>NT$3,370</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="margin-bottom: 20px;">
+                        <div style="width: 100%;border:1px solid #006737;padding: 10px;text-align: center;">
+                            <img src="image/intromini1.jpg" width="100%" style="margin-bottom: 10px;">
+                            <p class="p_title">悠墨大圓盆 – 貴氣仙人掌組</p>
+                            <p>NT$3,370</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="image/shop_right_banner.png" width="100%" style="margin-bottom: 20px;">
+                <h4 style="color: #006737;font-size: 2.4rem;">商品分類</h4>
+                <div id="shop_right_wrapper" style="margin-bottom: 20px;">
+                    <ul>
+                        <li style="background-color: #F2EEEB;">
+                            <span style="float: left;">【開幕誌慶】</span>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;"></i>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li>
+                            <span style="float: left;">【特別企劃】</span>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;"></i>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li>
+                            <span style="float: left;">【送禮需求】</span>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;"></i>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li>
+                            <span style="float: left;">【送禮價格】</span>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;"></i>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li>
+                            <span style="float: left;">【大型植物】</span>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;"></i>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li>
+                            <span style="float: left;">【手作課程】</span>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;"></i>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li>
+                            <span style="float: left;">【周邊商品】</span>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;"></i>
+                            <div style="clear: both;"></div>
+                        </li>
+                        <li>
+                            <span style="float: left;">【花器品牌】</span>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;"></i>
+                            <div style="clear: both;"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: #006737;font-size: 2.4rem;">購物車</h4>
+                    <p>購物車內無任何商品</p>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: #006737;font-size: 2.4rem;">客戶的聲音</h4>
+                    <img src="image/003-2.jpg" width="100%">
+                    <p>感謝各位於有肉網路花店購物，一點點肯定、一點點建議，對我們來說都很深刻、都會轉化為成長的動力。</p>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: #006737;font-size: 2.4rem;">多肉禮物・送肉送到心坎裡</h4>
+                    <img src="image/400-4.jpg" width="100%">
+                    <p>有來過有肉的朋友們，一定都知道我們最棒的就是整間店的多肉植物與眾多台灣設計師設計的花器，兩相搭配萌度爆表、心意更滿滿，在線上商店你一樣可以感受到我們對於多肉植物的熱愛與用心✨</p>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: #006737;font-size: 2.4rem;">網路花店最熱門的盆栽組</h4>
+                    <img src="image/花店2.jpg" width="100%">
+                    <p>若是遇到不知道要送什麼禮物，不知道朋友開店了該怎麼挑選致意的花禮，參考這些熱門選項，也許會給你帶來一些新的想法喔！</p>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: #006737;font-size: 2.4rem;">多肉禮品 Q&A</h4>
+                    <img src="image/qa400.jpg" width="100%">
+                    <p>在購買禮物時有遇到什麼問題嗎？還是擔心這麼漂亮療癒的多肉植物買回去要怎麼照顧呢？我們特地整理了問答集，先來看看吧！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div id="footer"></div>
+</body>
+
+</html>
